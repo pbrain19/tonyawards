@@ -1,0 +1,244 @@
+/* app css stylesheet */
+@font-face
+{
+font-family: futuras;
+src: url(futura.ttf);
+}
+ 
+html{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%; overflow: hidden;
+}
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+#box {
+    text-align: center;
+    float: left;
+    height: 1920px;
+    margin: 0px;
+    padding: 0px;
+    clear: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#header{
+    height: 8%;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+#headerText{
+    /* text-align: center; */
+
+    color: white;
+    font-size: 6.5em;
+    margin: 0px;
+    padding: 0px;
+    font-family: arial black;
+    display: inline-block;
+}
+
+#header>img{
+    height:155px;
+    
+    position: relative;
+    top: 15px;
+}
+
+
+#showScroll{
+    margin-top: 28px;
+
+    background-color: rgba(0, 0, 0, 0.97);
+    height: 44.5%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+#feeds{
+    padding: 10px;
+    text-align: -webkit-center;
+    width: 92%;
+    overflow-y: auto;
+    height: 665px !important;
+    margin: auto;
+    /* border-top: solid thick black; */
+    padding: 10px;
+}
+.facebook{
+    background: -webkit-linear-gradient(270deg,rgb(0,64,167)      0%,rgb(22,78,167) 51%,rgb(0,64,167) 97%), rgb(22, 78,      167);
+}
+.facebook>img{
+    height: 90%;
+    
+    padding-top: 2px;
+}
+.twitter{
+    background:  -webkit-linear-gradient(270deg,rgb(75,172,253)      0%,rgb(106,160,245) 48%,rgb(56,147,253) 100%), rgb(120, 165,      236);
+    padding-top: 9px !important;
+}
+.instagram{
+    background:  -webkit-linear-gradient(270deg,rgb(205,184,28) 0%,rgb(232,226,82) 99%);
+    //padding-top: 9px !important;
+}
+.masonry-brick{
+    position: relative;     
+    width: 320px;
+    margin: 5px;
+    float: left;
+    color: white;
+    font-family: futuras;
+    background: #1d1d1d;
+    box-shadow: 0 2px 3px rgb(70, 68, 68);
+}
+.masonry-brick>div{
+    height: 38px;
+    font-size: 21.5px;
+    font-family: "Times New Roman", Times, serif;
+    padding: 2px 16px;
+    
+}
+.masonry-brick>div>img{
+    width: 13%;
+}
+.masonry-brick img{
+    float: right;
+    width: 100%;
+}
+.masonry-brick p{
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+#center{
+    border-left: #ffffff solid 2px;
+    border-right: #ffffff solid 2px;
+}
+
+#fbFeed{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+#fbFeed img{
+    width: 52%;
+    float: left;
+    width: 40px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 10; 
+    /* background-color: aqua; */
+}
+
+#videoSelector{
+    white-space: nowrap; 
+    overflow: auto;     
+    width: 100%;
+}
+#videoSelector>div{
+    /* position: relative; */
+    /* width: 208px; */
+    /* height: 125px; */
+    /* display: inline-block; */
+    /* background: white; */
+    /* text-align: center; */
+    /* margin: 2px; */
+    overflow: hidden;
+}
+#videoSelector img{
+    width: 100%;
+}
+
+#videoSelector p{ 
+    text-align: center;
+    width: 93.5%;
+    height: 29px;
+    position: absolute;
+    bottom: 5px;
+    background: rgba(128, 128, 128, 0.47);
+    margin: 0;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    font-size: 1.2em;
+    padding: 10px 4px;
+    color: white;
+}
+#videoSelector::-webkit-scrollbar { 
+    display: none; 
+} 
+
+#powerd{
+    margin: auto auto;
+    width: 20%;
+    position: relative;
+    top: 10px;
+    margin-top: 15px;
+}
+
+.videoplaceholders{
+    
+    /* width: 91%; */ 
+    margin: auto;
+    padding: 0px 5px;
+}
+#feeds::-webkit-scrollbar { 
+    display: none; 
+}
+#hashtag{
+    color: white;
+    font-size: 4em;
+}
